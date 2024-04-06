@@ -1,0 +1,275 @@
+:root {
+  --title-color1: rgb(76, 76, 236);
+  --title-color2: cornflowerblue;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  height: 99%;
+}
+
+body {
+  background-color: #333333ff;
+  height: 100%;
+}
+
+#root {
+  height: 100%;
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+  /*min-height: var(--original-viewport-height);*/
+  background-color: #333333ff;
+  background-image: url("./assets/images/despesas-imovel-fundo.png");
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.App-containerBtnConfig {
+  display: flex;
+  justify-content: right;
+  width: 100%;
+}
+
+.App-containerBtnConfig button {
+  min-width: 44px;
+}
+
+.App-containerBtnConfig button img {
+  width: 30px;
+  height: auto;
+}
+
+.App-container {
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 85%;
+}
+
+.formGroup {
+  background-color: rgba(51, 51, 51, 0.55);
+  display: flex;
+  align-items: flex-end;
+  flex-direction: column;
+  border: 1px solid white;
+  border-radius: .5rem;
+  margin: .2rem;
+  padding: .5rem;
+  gap: .2rem;
+  width: auto;
+}
+
+.formGroup h3 {
+  color: white;
+  width: 100%;
+  text-align: center;
+}
+
+.formGroup input[type=text], input[type=password] {
+  background-color: rgba(255, 255, 255, 0.6);
+  max-width: 8.2rem;
+  font-size: 1.1rem;
+  border-radius: .3rem;
+  padding: .07rem;
+}
+
+.FormCorretor input[type=text], input[type=password] {
+  max-width: 15rem;
+}
+
+.formGroup > div > label {
+  margin-right: .3rem;
+  font-size: 1.1rem;
+  color: white;
+}
+
+.FormCorretor, .Configuracao {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 95vw;
+  padding: .5rem;
+}
+
+.logo {
+  display: flex;
+  width: 100%;
+  height: 90px;
+  margin-top: .4rem;
+  margin-bottom: .4rem;
+  justify-content: center;
+  background-image: url("./assets/images/logo.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
+.Resultado-logo {
+  height: 65px;
+}
+
+table {
+  background-color: rgba(51, 51, 51, 0.55);
+  border: .1rem solid white;
+  border-radius: .3rem;
+  padding: .2rem;
+  margin: .4rem;
+}
+
+.Resultado-titulo {
+  background-color: rgba(233, 91, 19, .7);
+  color: white;
+} 
+
+.Resultado-cabecalho {
+  background-color: rgba(165, 42, 42, 0.75);
+  position: sticky;
+  top: 0;
+  color: white;
+}
+
+th {
+  background-color: rgba(51, 51, 51, 0.7);
+  border-radius: .2rem;
+}
+
+tbody {
+  padding-bottom: 10rem;
+}
+
+td, th {
+  padding: .1rem;
+  padding-left: .1rem;
+  padding-right: .25rem;
+  color: white;
+}
+
+.Resultado-total {
+  font-weight: bold;
+  color: orange;
+  border-bottom: 0;
+}
+
+.Resultado-totalGeral {
+  color: rgb(233, 91, 19);
+  border-top: .1rem solid white;
+  border-bottom: 0;
+}
+
+.Configuracao-fixa1 {
+  display: flex;
+  width: auto;
+}
+
+.Configuracao-porValor {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin-top: .5rem;
+  border-radius: .5rem;
+  border: 2px solid white;
+}
+
+.Configuracao-porValor h3 {
+  flex: 0 0 100%;
+  background-color: var(--title-color1);
+  color: white;
+  border-top-left-radius: .4rem;
+  border-top-right-radius: .4rem;
+  margin-bottom: .2rem;
+  padding-left: .3rem;
+}
+
+.Configuracao-porValor h4 {
+  flex: 0 0 100%;
+  background-color: var(--title-color2);
+  color: white;
+  margin-top: .5rem;
+  margin-bottom: .2rem;
+  padding-left: .3rem;
+}
+
+.Configuracao-porValor p {
+  color: var(--title-color1);
+  background-color: rgba(255, 255, 255, 0.6);
+  padding: .4rem;
+  border-radius: .4rem;
+  width: 60%;
+}
+
+.Configuracao-botoesPorValor {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  flex-direction: row;
+  margin-top: .5rem;
+  margin-bottom: .5rem;
+}
+
+.Configuracao-botoesPersistencia {
+  display: flex;
+  justify-content: right;
+  margin-top: .7rem;
+  margin-bottom: .7rem;
+}
+
+.botoesPersistenciaCentralizar {
+  justify-content: center;
+}
+
+button {
+  margin: .3rem;
+  padding: .2rem;
+  font-size: 1rem;
+  min-width: 5rem;
+}
+
+.Menu > button {
+  width: 12rem;
+  margin: .1rem;
+  background-color: orange;
+  color: white;
+  font-weight: bold;
+  border-radius: .5rem;
+  height: 3rem;
+}
+
+/*@media screen and (orientation: portrait) and (max-width: 500px) {*/
+@media screen and (max-width: 550px) {   
+  .FormCorretor input[type=text] {
+    max-width: 95%;
+    font-size: 1.4rem;
+  }
+
+  .FormCorretor > form > .formGroup > div,
+  .DespesasGerais > .formGroup > div,
+  .SenhaAlterar > div {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-bottom: .4rem;
+  }
+
+  .DespesasGerais {
+    align-items: flex-start;
+  }
+
+  .DespesasGerais > .formGroup {
+    width: 100%;
+  }  
+}

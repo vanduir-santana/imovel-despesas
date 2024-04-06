@@ -1,0 +1,16 @@
+{
+  "name": "imovel-despesas",
+  "version": "1.0.0",
+  "description": "Cálculo de despesas de imóvel. A despesas são relativas a cartório, banco, etc.",
+  "main": "app.js",
+  "scripts": {
+    "preinstall": "npx only-allow pnpm",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "concurrently \"cd backend && pnpm run dev\" \"cd frontend && pnpm start\" "
+  },
+  "author": "Vanduir Santana Medeiros",
+  "license": "ISC",
+  "devDependencies": {
+    "concurrently": "^8.2.0"
+  }
+}
