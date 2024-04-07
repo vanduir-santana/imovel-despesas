@@ -33,7 +33,6 @@ app.get(['/', '/api/'], (req, res) => {
   });
 });
 
-
 app.listen(port, () => {
   console.log('API Despesas imóvel escutando na porta:', port);
 });
