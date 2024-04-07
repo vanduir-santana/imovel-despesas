@@ -15,7 +15,7 @@ export default function Menu({ setModoConfig, setEhConfiguracao }) {
   return (
     <div className="Menu formGroup">
       <button onClick={handleClick(ModosConfig.DespesasGerais)}>
-        Despesas Gerais (testes)
+        Despesas Gerais
       </button>
       <button onClick={handleClick(ModosConfig.DespesasRegistro)}>
         Despesas Registro
