@@ -28,7 +28,7 @@ app.use('/api/simular', simulacaoRoutes);
 app.get(['/', '/api/'], (req, res) => {
   res.send({
     app: 'API Despesas Imóvel',
-    version: '1.0.0',
+    version: '1.0.8',
     author: 'Vanduir Santana Medeiros'
   });
 });
