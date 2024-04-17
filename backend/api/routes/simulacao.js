@@ -188,7 +188,7 @@ function validarConfigs(
   }
 
   if (despesasRegistro.porValorRegistro.length === 0) {
-    return "É preciso configurar Despesas Registro por Valor Imóvel.";
+    return "É preciso configurar Despesas Registro por Valor do Imóvel.";
   }
 
   if (despesasCertidao.length === 0) {
