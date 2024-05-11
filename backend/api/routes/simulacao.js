@@ -171,6 +171,7 @@ function validarConfigs(
   despesasCertidao,
   quantidadeAtos,
 ) {
+
   for (const [categoria, oValores] of Object.entries(despesasGerais)) {
     for (const [item, valor] of Object.entries(oValores)) {
       if (valor === 0) {
